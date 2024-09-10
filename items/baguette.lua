@@ -1,5 +1,5 @@
 minetest.register_craftitem("imstaff:baguette", {
-	description = S("BAguette"),
+	description = S("Baguette"),
 	_doc_items_longdesc = S("This is a food item which can be eaten."),
 	inventory_image = "baguette.png",
 	groups = {food = 2, eatable = 6, compostability = 85},
