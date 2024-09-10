@@ -70,12 +70,3 @@ minetest.register_tool("imstaff:spear", {
 })
 
 -- Déclaration du craft du spear avec des bâtons de Mineclonia
-minetest.register_craft({
-    output = "imstaff:spear",
-    recipe = {
-        {"mcl_nether:netherite_ingot", "mcl_nether:netherite_ingot", "mcl_nether:netherite_ingot"},
-        {"mcl_mobitems:blaze_rod", "mcl_nether:netherite_ingot", "mcl_mobitems:blaze_rod"},
-        {"", "mcl_mobitems:blaze_rod", ""}
-    }
-})
-
