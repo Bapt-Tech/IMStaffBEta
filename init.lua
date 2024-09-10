@@ -27,6 +27,8 @@ dofile(minetest.get_modpath("imstaff") .. "/scripts/lookup.lua")
 --Items
 --Spear
 dofile(minetest.get_modpath("imstaff") .. "/items/spear.lua")
+--Baguette
+dofile(minetest.get_modpath("imstaff") .. "/items/baguette.lua")
 
 --Scripts
 --AdminNotify
