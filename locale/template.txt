@@ -1,0 +1,4 @@
+# textdomain: imstaffprev
+
+ImperModStaff : Preview = Preview
+Get the new features of IMStaff before the official updates ! = Essayez les nouveautés de IMstaff en avance avant la sortie officielle ! 
