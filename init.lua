@@ -1,18 +1,3 @@
---Items
---Spear
-dofile(minetest.get_modpath("imstaffprev") .. "/items/spear.lua")
---Baguette
-dofile(minetest.get_modpath("imstaffprev") .. "/items/baguette.lua")
-
---Scripts
---AdminNotify
-dofile(minetest.get_modpath("imstaffprev") .. "/scripts/adminnotify.lua")
-
-imstaffprev = {}
-imstaffprev.modname = core.get_current_modname()
-imstaffprev.modpath = core.get_modpath(imstaffprev.modname)
-
-
 --Privs
 
 local privs = {
@@ -28,14 +13,14 @@ end
 local scripts = {
 	"spectate",
 	"announce",
-    "heal",
+	"heal",
 	"openinvec",
-    "rename",
-    "quests",
-    "rickroll",
-    "textbox",
-    "lookup",
-    "adminnotify",
+	"rename",
+	"quests",
+	"rickroll",
+	"textbox",
+	"lookup",
+	"adminnotify",
 }
 
 for _, script in ipairs(scripts) do
