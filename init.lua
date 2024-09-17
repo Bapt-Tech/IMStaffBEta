@@ -1,35 +1,35 @@
 --Privs
 --Admin Priv
-dofile(minetest.get_modpath("imstaff") .. "/privs/admin.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/privs/admin.lua")
 
 --Scripts for commands files
 --/spectate and /unspectate commands
-dofile(minetest.get_modpath("imstaff") .. "/scripts/spectate.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/scripts/spectate.lua")
 --/announce command
-dofile(minetest.get_modpath("imstaff") .. "/scripts/announce.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/scripts/announce.lua")
 --/heal command
-dofile(minetest.get_modpath("imstaff") .. "/scripts/heal.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/scripts/heal.lua")
 --/openinv and /openec commands
-dofile(minetest.get_modpath("imstaff") .. "/scripts/openinvec.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/scripts/openinvec.lua")
 --/rename command
-dofile(minetest.get_modpath("imstaff") .. "/scripts/rename.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/scripts/rename.lua")
 --/quests and /createquest commands
-dofile(minetest.get_modpath("imstaff") .. "/scripts/quests.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/scripts/quests.lua")
 --/rickastley command
-dofile(minetest.get_modpath("imstaff") .. "/scripts/rickroll.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/scripts/rickroll.lua")
 --/textbox command
-dofile(minetest.get_modpath("imstaff") .. "/scripts/textbox.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/scripts/textbox.lua")
 --/lookup command
-dofile(minetest.get_modpath("imstaff") .. "/scripts/lookup.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/scripts/lookup.lua")
 --/doas command dont work
---dofile(minetest.get_modpath("imstaff") .. "/scripts/doas.lua")
+--dofile(minetest.get_modpath("imstaffprev") .. "/scripts/doas.lua")
 
 --Items
 --Spear
-dofile(minetest.get_modpath("imstaff") .. "/items/spear.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/items/spear.lua")
 --Baguette
-dofile(minetest.get_modpath("imstaff") .. "/items/baguette.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/items/baguette.lua")
 
 --Scripts
 --AdminNotify
-dofile(minetest.get_modpath("imstaff") .. "/scripts/adminnotify.lua")
+dofile(minetest.get_modpath("imstaffprev") .. "/scripts/adminnotify.lua")
