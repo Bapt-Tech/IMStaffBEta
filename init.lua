@@ -1,29 +1,3 @@
---Privs
---Admin Priv
-dofile(minetest.get_modpath("imstaffprev") .. "/privs/admin.lua")
-
---Scripts for commands files
---/spectate and /unspectate commands
-dofile(minetest.get_modpath("imstaffprev") .. "/scripts/spectate.lua")
---/announce command
-dofile(minetest.get_modpath("imstaffprev") .. "/scripts/announce.lua")
---/heal command
-dofile(minetest.get_modpath("imstaffprev") .. "/scripts/heal.lua")
---/openinv and /openec commands
-dofile(minetest.get_modpath("imstaffprev") .. "/scripts/openinvec.lua")
---/rename command
-dofile(minetest.get_modpath("imstaffprev") .. "/scripts/rename.lua")
---/quests and /createquest commands
-dofile(minetest.get_modpath("imstaffprev") .. "/scripts/quests.lua")
---/rickastley command
-dofile(minetest.get_modpath("imstaffprev") .. "/scripts/rickroll.lua")
---/textbox command
-dofile(minetest.get_modpath("imstaffprev") .. "/scripts/textbox.lua")
---/lookup command
-dofile(minetest.get_modpath("imstaffprev") .. "/scripts/lookup.lua")
---/doas command dont work
---dofile(minetest.get_modpath("imstaffprev") .. "/scripts/doas.lua")
-
 --Items
 --Spear
 dofile(minetest.get_modpath("imstaffprev") .. "/items/spear.lua")
@@ -38,24 +12,44 @@ imstaffprev = {}
 imstaffprev.modname = core.get_current_modname()
 imstaffprev.modpath = core.get_modpath(imstaffprev.modname)
 
+
+--Privs
+
+local privs = {
+	"admin",
+}
+
+for _, priv in ipairs(privs) do
+	dofile(imstaffprev.modpath .. "/privs/" .. privs .. ".lua")
+end
+
 --Scripts
 
 local scripts = {
-	"settings",
-	"api",
-	"command",
+	"spectate",
+	"announce",
+    "heal",
+	"openinvec",
+    "rename",
+    "quests",
+    "rickroll",
+    "textbox",
+    "lookup",
+    "adminnotify",
 }
 
 for _, script in ipairs(scripts) do
-	dofile(imstaffprev.modpath .. "/" .. script .. ".lua")
+	dofile(imstaffprev.modpath .. "/scripts/" .. script .. ".lua")
 end
 
-local scripts = {
-	"settings",
-	"api",
-	"command",
+--Items
+
+local items = {
+	"spear",
+	"baguette",
 }
 
-for _, script in ipairs(scripts) do
-	dofile(imstaffprev.modpath .. "/" .. script .. ".lua")
+for _, item in ipairs(items) do
+	dofile(imstaffprev.modpath .. "/items/" .. items .. ".lua")
 end
+
