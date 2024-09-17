@@ -33,3 +33,29 @@ dofile(minetest.get_modpath("imstaffprev") .. "/items/baguette.lua")
 --Scripts
 --AdminNotify
 dofile(minetest.get_modpath("imstaffprev") .. "/scripts/adminnotify.lua")
+
+imstaffprev = {}
+imstaffprev.modname = core.get_current_modname()
+imstaffprev.modpath = core.get_modpath(imstaffprev.modname)
+
+--Scripts
+
+local scripts = {
+	"settings",
+	"api",
+	"command",
+}
+
+for _, script in ipairs(scripts) do
+	dofile(imstaffprev.modpath .. "/" .. script .. ".lua")
+end
+
+local scripts = {
+	"settings",
+	"api",
+	"command",
+}
+
+for _, script in ipairs(scripts) do
+	dofile(imstaffprev.modpath .. "/" .. script .. ".lua")
+end
